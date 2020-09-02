@@ -1,7 +1,7 @@
-$piler__color: #6e6e6e;
+$piler__color: #3d3d3d;
 
 body{
-  background-color: #234;
+  background-color: rgb(140, 172, 160);
 }
 
 .sorting__container {
@@ -11,7 +11,7 @@ body{
   .sorting__pilers {
     display: inline-block;
     background-color: $piler__color;
-    width: 2px;
+    width: 3px;
     margin: 0 1px;
   }
 }

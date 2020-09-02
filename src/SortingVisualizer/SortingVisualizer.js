@@ -16,16 +16,17 @@ class SortingVisualizer extends React.Component {
   }
   resetArray() {
     var array = [];
-    for (let i = 0; i < 170; i++) {
-      array.push(getRandomNumberInBetween(50, 600));
+    var NUMBER_OF_PILERS = window.innerWidth/5.1;
+    for (let i = 0; i < NUMBER_OF_PILERS; i++) {
+      array.push(getRandomNumberInBetween(5, 600));
     }
     this.setState({array});
   }
 
   mergeSort() {
     const PRIMARY_COLOR = "teal";
-    const SECONDARY_COLOR = "tomato";
-    const ANIMATION_SPEED = "15";
+    const SECONDARY_COLOR = "red";
+    const ANIMATION_SPEED = 10;
     const array = this.state.array;
     const animations = mergeSortAnimation(array,0,array.length);
     for (let i = 0; i < animations.length; i++) {
