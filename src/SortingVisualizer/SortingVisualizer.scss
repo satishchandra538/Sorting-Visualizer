@@ -1,0 +1,17 @@
+$piler__color: #6e6e6e;
+
+body{
+  background-color: #234;
+}
+
+.sorting__container {
+  text-align: center;
+  margin-top:5px;
+
+  .sorting__pilers {
+    display: inline-block;
+    background-color: $piler__color;
+    width: 2px;
+    margin: 0 1px;
+  }
+}
